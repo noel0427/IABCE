@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Language Selection</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -43,11 +46,13 @@
       font-size: 1rem;
       font-weight: 400;
       margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
     }
 
     .overlay-box p {
       font-size: 0.85rem;
       margin-bottom: 1.5rem;
+      letter-spacing: 0.04em;
     }
 
     .buttons {
@@ -84,10 +89,18 @@
   </div>
 
   <script>
+    /**
+     * Redirect the user to the correct information page
+     * for the language they chose.  Adjust the paths
+     * (“./en/information.html” and “./zh/information.html”)
+     * to match your GitHub Pages folder structure.
+     */
     function selectLanguage(lang) {
-      alert("Language selected: " + lang);
-      // You can redirect to a different page based on language here
-      // window.location.href = lang === 'en' ? '/en/index.html' : '/zh/index.html';
+      if (lang === 'en') {
+        window.location.href = './en/information.html';
+      } else if (lang === 'zh') {
+        window.location.href = './zh/information.html';
+      }
     }
   </script>
 </body>
