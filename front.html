@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Selection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('car-background.jpg') no-repeat center right;
+      background-size: contain;
+      background-color: #000;
+    }
+
+    .overlay-box {
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .overlay-box h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .overlay-box p {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .buttons button {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="overlay-box">
+      <h2>PLEASE SELECT YOUR LANGUAGE</h2>
+      <p>请选择您的语言</p>
+      <div class="buttons">
+        <button onclick="selectLanguage('en')">ENGLISH</button>
+        <button onclick="selectLanguage('zh')">中文</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectLanguage(lang) {
+      alert("Language selected: " + lang);
+      // You can redirect to a different page based on language here
+      // window.location.href = lang === 'en' ? '/en/index.html' : '/zh/index.html';
+    }
+  </script>
+</body>
+</html>
