@@ -2,138 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IABCE 2026 Introduction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IABCE 2026</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: url('BgInfo1.png') no-repeat center center fixed;
+      padding: 0;
+      height: 100%;
+      background: url('1.png') no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    .top-bar {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .back-link-top {
-      align-self: flex-start;
-      margin-bottom: 10px;
-    }
-
-    .back-link-top a {
-      color: #ff471a;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .back-link-top a:hover {
-      text-decoration: underline;
-    }
-
-    .header-buttons {
-      display: flex;
       justify-content: center;
-      gap: 30px;
-      margin-top: 10px;
     }
 
-    .header-button {
+    .button-container {
+      display: flex;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.4); /* Optional semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .btn {
       background-color: #ff471a;
       color: white;
       border: none;
-      padding: 10px 20px;
-      font-size: 14px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
       cursor: pointer;
-      border-radius: 4px;
       transition: background-color 0.3s ease;
     }
 
-    .header-button:hover {
-      background-color: #e64000;
-    }
-
-    .main-container {
-      display: flex;
-      justify-content: flex-end;
-      padding: 60px 80px;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .text-container {
-      max-width: 700px;
-    }
-
-    .text-container h1 {
-      color: #ff471a;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .text-container p {
-      line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-      .main-container {
-        flex-direction: column;
-        padding: 30px;
-      }
-
-      .top-bar {
-        align-items: flex-start;
-      }
-
-      .text-container {
-        width: 100%;
-        padding: 0;
-      }
-
-      .header-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    .btn:hover {
+      background-color: #e63e12;
     }
   </style>
 </head>
 <body>
-
-  <!-- Top Bar with Back Link and Buttons -->
-  <div class="top-bar">
-    <div class="back-link-top">
-      <a href="../index.html">← BACK TO LANGUAGE SELECTION</a>
-    </div>
-    <div class="header-buttons">
-      <button class="header-button">AIMS & OBJECTIVES</button>
-      <button class="header-button">Scan QR Code</button>
-    </div>
+  <div class="button-container">
+    <button class="btn" onclick="history.back()">← Back</button>
+    <button class="btn">AIMS & OBJECTIVES</button>
+    <button class="btn">Scan QR Code</button>
   </div>
-
-  <!-- Main Content Section -->
-  <div class="main-container">
-    <div class="text-container">
-      <h1>INTRODUCTION</h1>
-      <p>
-        The International Automotive Business Convention & Exhibition 2026 (IABCE 2026) in Malaysia will be a landmark event bringing together automotive industry leaders, innovators, policymakers, and technology providers from around the world.
-      </p>
-      <p>
-        This event will serve as a pivotal platform for discussing the future of the automotive sector in the context of Malaysia's growing role as a key player in the Southeast Asian automotive market and the global automotive supply chain.
-      </p>
-      <p>
-        With Malaysia's strategic location, robust manufacturing capabilities, and increasing focus on electric vehicle (EV) adoption and sustainable mobility, IABCE 2026 will position the country at the forefront of automotive innovation in the region.
-      </p>
-      <p>
-        The event will feature cutting-edge product exhibitions, thought-provoking panel discussions, and high-level networking opportunities to drive growth and collaboration within the automotive industry.
-      </p>
-    </div>
-  </div>
-
 </body>
 </html>
-
