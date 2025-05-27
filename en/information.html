@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IABCE 2026</title>
+  <meta charset="UTF-8">
+  <title>IABCE 2026 Introduction</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      background: url('1.png') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #000;
       font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
-
-    .button-container {
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 100%;
       display: flex;
-      gap: 20px;
-      background-color: rgba(0, 0, 0, 0.4); /* Optional semi-transparent background */
-      padding: 20px;
-      border-radius: 10px;
+      justify-content: space-between;
+      padding: 0 40px;
+      z-index: 10;
     }
-
-    .btn {
-      background-color: #ff471a;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 6px;
+    a.nav-link {
+      color: orange;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2em;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
-
-    .btn:hover {
-      background-color: #e63e12;
+    .image-container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Makes sure image fills the screen while maintaining aspect */
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <button class="btn" onclick="history.back()">← Back</button>
-    <button class="btn">AIMS & OBJECTIVES</button>
-    <button class="btn">Scan QR Code</button>
+
+  <nav>
+    <a class="nav-link" href="language-selection.html">BACK</a>
+    <a class="nav-link" href="aims-objectives.html">AIMS & OBJECTIVES</a>
+    <a class="nav-link" href="scan-qr.html">SCAN QR CODE</a>
+  </nav>
+
+  <div class="image-container">
+    <img src="1.png" alt="IABCE 2026 Introduction">
   </div>
+
 </body>
 </html>
