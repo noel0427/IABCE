@@ -16,18 +16,25 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    body, html {
-      height: 120%;
-      width: 120%;
+    html, body {
+      height: 100%;
+      width: 100%;
       background-color: #000;
       overflow: hidden;
     }
 
-    .container {
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 120vh;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: url('front2.png') no-repeat center center;
       background-size: contain;
       background-color: #000;
@@ -59,7 +66,7 @@
       display: flex;
       justify-content: flex-start;
       gap: 1rem;
-      transform: translateX(-150px); /* shift buttons 20px to the left */
+      transform: translateX(-20px);
     }
 
     .buttons button {
