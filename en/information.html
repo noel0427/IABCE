@@ -8,18 +8,33 @@
     body {
       margin: 0;
       background: url('BgInfo1.png') no-repeat center center fixed;
-      background-size: cover;
+      background-size: 100% 100%;
       font-family: Arial, sans-serif;
       color: white;
     }
 
-    .header {
+    .top-bar {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding: 20px;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .back-link-top a {
+      color: #ff471a;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .back-link-top a:hover {
+      text-decoration: underline;
+    }
+
+    .header-buttons {
+      display: flex;
       gap: 30px;
-      background-color: rgba(0, 0, 0, 0.6); /* Optional: semi-transparent background */
     }
 
     .header-button {
@@ -39,26 +54,30 @@
 
     .main-container {
       display: flex;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.7); /* Optional: readable background */
+      justify-content: flex-end;
+      padding: 60px 80px;
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     .text-container {
-      max-width: 800px;
+      max-width: 700px;
     }
 
     .text-container h1 {
       color: #ff471a;
       font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .text-container p {
+      line-height: 1.6;
     }
 
     .footer-logos {
       background-color: white;
       width: 100%;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       padding: 30px 0;
     }
@@ -67,49 +86,59 @@
       color: black;
       font-size: 16px;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .back-link {
-      text-align: center;
-      padding: 20px;
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
-    .back-link a {
-      color: #ff471a;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .back-link a:hover {
-      text-decoration: underline;
+    .logo-row img {
+      max-height: 60px;
+      object-fit: contain;
     }
 
     @media (max-width: 768px) {
       .main-container {
         flex-direction: column;
+        padding: 30px;
       }
 
-      .header {
+      .top-bar {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
       }
 
       .text-container {
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
+      }
+
+      .logo-row {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with Buttons -->
-  <div class="header">
-    <button class="header-button">AIMS & OBJECTIVES</button>
-    <button class="header-button">Scan QR Code</button>
+  <!-- Top Bar with Back Link and Buttons -->
+  <div class="top-bar">
+    <div class="back-link-top">
+      <a href="../index.html">← BACK TO LANGUAGE SELECTION</a>
+    </div>
+    <div class="header-buttons">
+      <button class="header-button">AIMS & OBJECTIVES</button>
+      <button class="header-button">SCAN QR CODE</button>
+    </div>
   </div>
 
-  <!-- Main Text Section -->
+  <!-- Main Content Section -->
   <div class="main-container">
     <div class="text-container">
       <h1>INTRODUCTION</h1>
@@ -128,15 +157,15 @@
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- Footer Logos -->
   <div class="footer-logos">
-    <p>Powered by IABCE Malaysia</p>
-  </div>
-
-  <!-- Back Link -->
-  <div class="back-link">
-    <a href="../index.html">← BACK TO LANGUAGE SELECTION</a>
+    <div class="logo-row">
+      <img src="BusinessEventsSarawak.png" alt="Business Events Sarawak" />
+      <img src="TribeLegacySarawak.png" alt="Tribe Legacy Sarawak" />
+      <img src="SarawakMoreToDiscover.png" alt="Sarawak More To Discover" />
+    </div>
   </div>
 
 </body>
 </html>
+
