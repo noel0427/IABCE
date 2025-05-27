@@ -13,7 +13,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body, html {
@@ -59,7 +59,7 @@
       display: flex;
       justify-content: flex-start;
       gap: 1rem;
-      margin-left: -1rem; /* shift buttons slightly left */
+      transform: translateX(-20px); /* shift buttons 20px to the left */
     }
 
     .buttons button {
@@ -91,12 +91,6 @@
   </div>
 
   <script>
-    /**
-     * Redirect the user to the correct information page
-     * for the language they chose.  Adjust the paths
-     * (“./en/information.html” and “./zh/information.html”)
-     * to match your GitHub Pages folder structure.
-     */
     function selectLanguage(lang) {
       if (lang === 'en') {
         window.location.href = './en/information.html';
