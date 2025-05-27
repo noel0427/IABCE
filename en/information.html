@@ -7,33 +7,26 @@
   <style>
     body {
       margin: 0;
-      background-color: #000;
+      background: url('BgInfo1.png') no-repeat center center fixed;
+      background-size: cover;
       font-family: Arial, sans-serif;
       color: white;
     }
 
     .header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       padding: 20px;
-    }
-
-    .header img {
-      height: 60px;
-    }
-
-    .header-center {
-      display: flex;
-      align-items: center;
-      gap: 30px; /* Wider gap between the two buttons */
+      gap: 30px;
+      background-color: rgba(0, 0, 0, 0.6); /* Optional: semi-transparent background */
     }
 
     .header-button {
       background-color: #ff471a;
       color: white;
       border: none;
-      padding: 10px 16px;
+      padding: 10px 20px;
       font-size: 14px;
       cursor: pointer;
       border-radius: 4px;
@@ -48,24 +41,12 @@
       display: flex;
       flex-wrap: wrap;
       padding: 40px 20px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .image-container {
-      width: 45%;
-      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-      overflow: hidden;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.7); /* Optional: readable background */
     }
 
     .text-container {
-      width: 50%;
+      max-width: 800px;
     }
 
     .text-container h1 {
@@ -82,8 +63,10 @@
       padding: 30px 0;
     }
 
-    .footer-logos img {
-      height: 60px;
+    .footer-logos p {
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
     }
 
     .back-link {
@@ -107,47 +90,29 @@
         flex-direction: column;
       }
 
-      .image-container,
-      .text-container {
-        width: 100%;
-        clip-path: none;
-      }
-
-      .text-container {
-        margin-top: 20px;
-      }
-
       .header {
         flex-direction: column;
-        gap: 10px;
       }
 
-      .header-center {
-        flex-direction: column;
-        gap: 10px;
+      .text-container {
+        width: 100%;
+        padding: 0 10px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header with Buttons -->
   <div class="header">
-    <img src="InfoPageImg4.png" alt="Top Left Logo">
-    <div class="header-center">
-      <button class="header-button">AIMS & OBJECTIVES</button>
-      <button class="header-button">SCAN QR CODE</button>
-    </div>
-    <img src="InfoPageImg3.png" alt="Top Right Logo">
+    <button class="header-button">AIMS & OBJECTIVES</button>
+    <button class="header-button">Scan QR Code</button>
   </div>
 
-  <!-- Main Section -->
+  <!-- Main Text Section -->
   <div class="main-container">
-    <div class="image-container">
-      <img src="InfoPageImg1.png" alt="Car Image" />
-    </div>
     <div class="text-container">
-      <h1>iNTRODUCTION</h1>
+      <h1>INTRODUCTION</h1>
       <p>
         The International Automotive Business Convention & Exhibition 2026 (IABCE 2026) in Malaysia will be a landmark event bringing together automotive industry leaders, innovators, policymakers, and technology providers from around the world.
       </p>
@@ -163,12 +128,12 @@
     </div>
   </div>
 
-  <!-- White Footer with Centered Logo -->
+  <!-- Footer -->
   <div class="footer-logos">
-    <img src="InfoPageImg2.png" alt="Business Events Sarawak Logo">
+    <p>Powered by IABCE Malaysia</p>
   </div>
 
-  <!-- Back to Language Selection Link -->
+  <!-- Back Link -->
   <div class="back-link">
     <a href="../index.html">← BACK TO LANGUAGE SELECTION</a>
   </div>
