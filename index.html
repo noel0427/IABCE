@@ -13,7 +13,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body, html {
@@ -28,7 +28,7 @@
       justify-content: center;
       align-items: center;
       height: 120vh;
-      background: url('front2.png') no-repeat center right;
+      background: url('front2.png') no-repeat center center;
       background-size: contain;
       background-color: #000;
     }
@@ -57,7 +57,9 @@
 
     .buttons {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-left: -1rem; /* shift buttons slightly left */
     }
 
     .buttons button {
@@ -105,4 +107,3 @@
   </script>
 </body>
 </html>
-
