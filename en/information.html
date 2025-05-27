@@ -8,43 +8,50 @@
       margin: 0;
       background-color: #000;
       font-family: Arial, sans-serif;
+      color: #fff;
     }
-    nav {
-      position: absolute;
-      top: 20px;
-      left: 0;
+
+    /* Centered navigation */
+    .nav-container {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 40px;
+      text-align: center;
+      padding: 20px 0;
+      position: absolute;
+      top: 0;
       z-index: 10;
     }
-    a.nav-link {
+
+    .nav-link {
+      margin: 0 20px;
       color: orange;
       font-weight: bold;
       text-decoration: none;
       font-size: 1.2em;
-      cursor: pointer;
     }
+
+    /* Image styling */
     .image-container {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 80px; /* offset for nav */
     }
+
     .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Makes sure image fills the screen while maintaining aspect */
+      width: 90%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
 
-  <nav>
+  <div class="nav-container">
     <a class="nav-link" href="language-selection.html">BACK</a>
     <a class="nav-link" href="aims-objectives.html">AIMS & OBJECTIVES</a>
     <a class="nav-link" href="scan-qr.html">SCAN QR CODE</a>
-  </nav>
+  </div>
 
   <div class="image-container">
     <img src="1.png" alt="IABCE 2026 Introduction">
