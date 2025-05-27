@@ -16,26 +16,19 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    html, body {
-      height: 115%;
-      width: 115%;
+    body, html {
+      height: 100%;
+      width: 100%;
       background-color: #000;
       overflow: hidden;
     }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
     .container {
-      height: 100vh;
-      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url('front2.png') no-repeat center center;
+      height: 100vh;
+      background: url('front2.png') no-repeat center right;
       background-size: contain;
       background-color: #000;
     }
@@ -64,9 +57,7 @@
 
     .buttons {
       display: flex;
-      justify-content: flex-start;
-      gap: 1rem;
-      transform: translateX(0px);
+      justify-content: space-around;
     }
 
     .buttons button {
@@ -98,6 +89,12 @@
   </div>
 
   <script>
+    /**
+     * Redirect the user to the correct information page
+     * for the language they chose.  Adjust the paths
+     * (“./en/information.html” and “./zh/information.html”)
+     * to match your GitHub Pages folder structure.
+     */
     function selectLanguage(lang) {
       if (lang === 'en') {
         window.location.href = './en/information.html';
