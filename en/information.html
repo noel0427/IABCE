@@ -23,9 +23,30 @@
       height: 60px;
     }
 
+    .header-center {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     .header-text {
       color: white;
       font-size: 16px;
+    }
+
+    .qr-button {
+      background-color: #ff471a;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .qr-button:hover {
+      background-color: #e64000;
     }
 
     .main-container {
@@ -67,7 +88,6 @@
     }
 
     .footer-logos img {
-      margin: 0 20px;
       height: 60px;
     }
 
@@ -101,6 +121,16 @@
       .text-container {
         margin-top: 20px;
       }
+
+      .header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .header-center {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
@@ -109,7 +139,10 @@
   <!-- Header -->
   <div class="header">
     <img src="InfoPageImg4.png" alt="Top Left Logo">
-    <div class="header-text">AIMS & OBJECTIVES</div>
+    <div class="header-center">
+      <div class="header-text">AIMS & OBJECTIVES</div>
+      <button class="qr-button">Scan QR Code</button>
+    </div>
     <img src="InfoPageImg3.png" alt="Top Right Logo">
   </div>
 
@@ -135,11 +168,9 @@
     </div>
   </div>
 
-  <!-- White Footer with Logos -->
+  <!-- White Footer with Centered Logo -->
   <div class="footer-logos">
-    <img src="InfoPageImg2.png" alt="Footer Logo 1">
-    <img src="InfoPageImg5.png" alt="Tribe Legacy Logo">
-    <img src="InfoPageImg5.png" alt="Sarawak More To Discover Logo">
+    <img src="InfoPageImg2.png" alt="Business Events Sarawak Logo">
   </div>
 
   <!-- Back to Language Selection Link -->
