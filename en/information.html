@@ -11,19 +11,23 @@
       font-family: Arial, sans-serif;
       color: white;
     }
+
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px;
     }
+
     .header img {
       height: 60px;
     }
+
     .header-text {
       color: white;
       font-size: 16px;
     }
+
     .main-container {
       display: flex;
       flex-wrap: wrap;
@@ -31,42 +35,69 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .image-container {
       width: 45%;
       clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
       overflow: hidden;
     }
+
     .image-container img {
       width: 100%;
       height: auto;
       display: block;
     }
+
     .text-container {
       width: 50%;
     }
+
     .text-container h1 {
       color: #ff471a;
       font-size: 40px;
     }
+
     .footer-logos {
       background-color: white;
+      width: 100%;
       display: flex;
       justify-content: center;
-      padding: 20px 0;
+      align-items: center;
+      padding: 30px 0;
     }
+
     .footer-logos img {
       margin: 0 20px;
       height: 60px;
     }
+
+    .back-link {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .back-link a {
+      color: #ff471a;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
       .main-container {
         flex-direction: column;
       }
+
       .image-container,
       .text-container {
         width: 100%;
         clip-path: none;
       }
+
       .text-container {
         margin-top: 20px;
       }
@@ -74,12 +105,15 @@
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <div class="header">
     <img src="InfoPageImg4.png" alt="Top Left Logo">
     <div class="header-text">AIMS & OBJECTIVES</div>
     <img src="InfoPageImg3.png" alt="Top Right Logo">
   </div>
 
+  <!-- Main Section -->
   <div class="main-container">
     <div class="image-container">
       <img src="InfoPageImg1.png" alt="Car Image" />
@@ -101,17 +135,17 @@
     </div>
   </div>
 
-  <div class="footer-logos" style="background-color: white;">
+  <!-- White Footer with Logos -->
+  <div class="footer-logos">
     <img src="InfoPageImg2.png" alt="Footer Logo 1">
     <img src="InfoPageImg5.png" alt="Tribe Legacy Logo">
     <img src="InfoPageImg5.png" alt="Sarawak More To Discover Logo">
   </div>
 
-  <div style="text-align: center; padding: 20px;">
-    <a href="../index.html" style="color: #ff471a; font-weight: bold; text-decoration: none; font-size: 18px;">
-      ← BACK TO LANGUAGE SELECTION
-    </a>
-</div>
+  <!-- Back to Language Selection Link -->
+  <div class="back-link">
+    <a href="../index.html">← BACK TO LANGUAGE SELECTION</a>
+  </div>
+
 </body>
 </html>
-
