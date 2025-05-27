@@ -10,6 +10,7 @@
       background-color: #000;
       font-family: 'Poppins', sans-serif;
       color: #e11915;
+      position: relative;
     }
 
     /* Top-centered nav */
@@ -22,28 +23,46 @@
     }
 
     .nav-link {
-      margin: 0 40px; /* Increased spacing */
+      margin: 0 40px;
       color: #e11915;
       font-weight: 600;
       text-decoration: none;
       font-size: 1.2em;
     }
 
-    /* Image centered and sized */
+    /* Corner images */
+    .top-left,
+    .top-right {
+      position: absolute;
+      top: 20px;
+      width: 80px;
+      height: auto;
+      z-index: 20;
+    }
+
+    .top-left {
+      left: 20px;
+    }
+
+    .top-right {
+      right: 20px;
+    }
+
+    /* Main image centered */
     .image-container {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      padding-top: 80px; /* space for nav */
+      padding-top: 100px;
       box-sizing: border-box;
     }
 
     .image-container img {
       width: 1920px;
       height: 1080px;
-      max-width: 115%;
-      max-height: 115vh;
+      max-width: 113%;
+      max-height: 113vh;
       object-fit: contain;
       border-radius: 10px;
     }
@@ -51,12 +70,20 @@
 </head>
 <body>
 
+  <!-- Top Left Logo -->
+  <img src="InfoPageImg4.png" alt="Top Left Icon" class="top-left">
+
+  <!-- Top Right Logo -->
+  <img src="InfoPageImg3.png" alt="Top Right Icon" class="top-right">
+
+  <!-- Top Center Navigation -->
   <div class="nav-container">
     <a class="nav-link" href="language-selection.html">BACK</a>
     <a class="nav-link" href="aims-objectives.html">AIMS & OBJECTIVES</a>
     <a class="nav-link" href="scan-qr.html">SCAN QR CODE</a>
   </div>
 
+  <!-- Main Content Image -->
   <div class="image-container">
     <img src="1a.png" alt="IABCE 2026 Introduction">
   </div>
