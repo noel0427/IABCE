@@ -30,19 +30,24 @@
     .top-right {
       right: 20px;
     }
-    
-    .image-wrapper {
-      position: relative;
-      width: 115%;
-      height: 115vh;
-      overflow: hidden;
+
+        /* Main image */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 100px;
+      box-sizing: border-box;
     }
 
-    .image-wrapper img {
-      width: 115%;
-      height: 115%;
+    .image-container img {
+      width: 1920px;
+      height: 1080px;
+      max-width: 113%;
+      max-height: 113vh;
       object-fit: contain;
-      display: block;
+      border-radius: 10px;
     }
 
     .back-link {
